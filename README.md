@@ -1,12 +1,20 @@
 # Halloween Game
 
-Een Mobile game gemaakt met de Corona SDK Lua framework
+Een Mobile 2D mobile game gemaakt met Corona
 
 ## Tools
 
 * Corona SDK
 * Sublime Text 2 met de Corona Editor Plugin
 * Corona Simulater
+
+## Links
+
+https://coronalabs.com/products/corona-sdk/
+
+http://www.sublimetext.com/
+
+https://packagecontrol.io/installation
 
 ## Instructies
 
