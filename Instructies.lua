@@ -186,7 +186,7 @@ Success Ninja en bouw een awesome game!
 		
 			self.pumpkin.x = self.pumpkin.x + self.direction;
 
-		** Code voor de snelheid van de pampeon - CodeBlok: Pompoen attributen **
+		** Code voor de snelheid van de pompoen - CodeBlok: Pompoen attributen **
 		
 			self.speed = -5;
 			
