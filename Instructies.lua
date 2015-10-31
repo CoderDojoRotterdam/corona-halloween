@@ -74,24 +74,24 @@ Success Ninja en bouw een awesome game!
 	
 	
 	==============================================
-	=== STAP 2: Het aanval van enge pampoenen! ===
+	=== STAP 2: Het aanval van enge pompoenen! ===
 	==============================================
 	
-	CodeBlokken: "Variabelen"-(main.lua), "Maak een enge Pampoen"-(main.lua), "GameLoop"-(main.lua)
+	CodeBlokken: "Variabelen"-(main.lua), "Maak een enge Pompoen"-(main.lua), "GameLoop"-(main.lua)
 	
 	Goed gedaan Ninja, je hebt je eigen wereld gemaakt! Maar er is nog geen leven, daar ben je hier voor Ninja, je gaat de goed en de kwaad maken!
-	Laten we eerst beginnen met de kwaad. Hiervoor gaan we een enge lopende pampoen in de wereld zetten!
+	Laten we eerst beginnen met de kwaad. Hiervoor gaan we een enge lopende pompoen in de wereld zetten!
 	
-	Als eerste, hebben een array nodig om onze enge pampoenen erin te kunnen stoppen. Met een array, kunnen we de pampoenen makkelijk en snel aanpassen en
+	Als eerste, hebben een array nodig om onze enge pompoenen erin te kunnen stoppen. Met een array, kunnen we de pompoenen makkelijk en snel aanpassen en
 	controleren. Om een array te maken, kun je de volgende code gebruiken:
 	
-		** Array voor de pampoenen - CodeBlok: Variabelen **
+		** Array voor de pompoenen - CodeBlok: Variabelen **
 		
 			local enemies = {};
 	
-	Een array is gemaakt! Nu ga je de array invullen met de enge pampoenen en tot leven brengen in de wereld! Je kan het in de volgende manier doen:
+	Een array is gemaakt! Nu ga je de array invullen met de enge pompoenen en tot leven brengen in de wereld! Je kan het in de volgende manier doen:
 	
-		** Code om pampoenen te maken - CodeBlok: Maak een enge Pampoen **
+		** Code om pompoenen te maken - CodeBlok: Maak een enge Pompoen **
 		
 			if tableLength(enemies) < totalEnemies then
 				
@@ -120,11 +120,11 @@ Success Ninja en bouw een awesome game!
 					
 				end
 				
-			De volgende code zorgt ervoor dat je een nieuwe enge pampoen aanmaakt en in een array stoppen:
+			De volgende code zorgt ervoor dat je een nieuwe enge pompoen aanmaakt en in een array stoppen:
 			
 				table.insert(array, waarde);
 				
-			De array is dus enemies en de waarde is de pampoen die wordt aangemaakt.
+			De array is dus enemies en de waarde is de pompoen die wordt aangemaakt.
 			In plaats van waarde zetten we dan:
 				
 				Enemy.new(0,0)
@@ -133,7 +133,7 @@ Success Ninja en bouw een awesome game!
 			
 		== EINDE UITLEG ==
 		
-	Speel met de waarden en zet de pampoenen op een goede plek! Je kan ook een random waarde doorgeven! Dit kun je doen door
+	Speel met de waarden en zet de pompoenen op een goede plek! Je kan ook een random waarde doorgeven! Dit kun je doen door
 	de volgende code te gebruiken:
 	
 		math.random(A, B);
@@ -150,50 +150,50 @@ Success Ninja en bouw een awesome game!
 	
 	== EXTRA == 
 	
-		** Automatisch pampoenen aanmaken - CodeBlok: GameLoop -(main.lua) **
+		** Automatisch pompoenen aanmaken - CodeBlok: GameLoop -(main.lua) **
 		
 		De stukje code die je net heb geschreven is in een gameloop. Een gameloop voert een code uit bij elke frame. Een frame wordt bedoeld
 		dat de scherm wordt elke keer refreshed en hertekent nieuwe fotos, sprites, etc. Maar die frames wordt elke milliseconde refreshed, dus 
-		er worden heel veel pampoenen getekend en dit zorgt ervoor dat de game crashed! We willen natuurlijk wereld met te veel enge pampoenen!
+		er worden heel veel pompoenen getekend en dit zorgt ervoor dat de game crashed! We willen natuurlijk wereld met te veel enge pompoenen!
 		
-		Daarom zijn er een aantal variabelen gemaakt om ervoor te zorgen dat er een limiet is voor de enge pampoenen. Je kan met de volgende
+		Daarom zijn er een aantal variabelen gemaakt om ervoor te zorgen dat er een limiet is voor de enge pompoenen. Je kan met de volgende
 		variabelen spelen en kijken wat er allemaal gebeurd!
 		
-			-- Dit zorgt ervoor dat er elke 3 seconde een pampoen wordt gemaakt!
+			-- Dit zorgt ervoor dat er elke 3 seconde een pompoen wordt gemaakt!
 			local spawnStart = 3;
 			
-			-- Dit zorgt ervoor dat er in totaal 5 pampoenen gemaakt kan worden. Niet meer!
+			-- Dit zorgt ervoor dat er in totaal 5 pompoenen gemaakt kan worden. Niet meer!
 			local totalEnemies = 5;
 			
-		Speel met de waarden en bepaal zelf hoe vaak en hoeveel pampoenen worden gemaakt!
+		Speel met de waarden en bepaal zelf hoe vaak en hoeveel pompoenen worden gemaakt!
 	
 	== EINDE EXTRA ==
 	
 	
 	========================================
-	=== STAP 3: De enge pampoenen lopen! ===
+	=== STAP 3: De enge pompoenen lopen! ===
 	========================================
 	
-	CodeBlokken: "Een lopende pampoen"-(enemy.lua), "Pampoen attributen"-(enemy.lua)
+	CodeBlokken: "Een lopende pompoen"-(enemy.lua), "Pompoen attributen"-(enemy.lua)
 
-	LETOP: Haal de twee streepjes achter "updateSprites()" weg om de code te laten draaien! Die kun je vinden bij de gameloop functie.
+	LETOP: Haal de twee streepjes voor "updateSprites()" weg om de code te laten draaien! Die kun je vinden bij de gameloop functie.
 	
-	Je wordt nog steeds beter Ninja! We hebben een wereld met enge pampoenen, maar ze blijven allemaal op een plek. Ze zijn wel aan het bewegen, maar
-	ze weten niet waar! Jij gaat ervoor zorgen dat ze een bepaalde richting moet lopen! Een enge pampoen kan niks doen als ze nergens kunnen bewegen!
+	Je wordt nog steeds beter Ninja! We hebben een wereld met enge pompoenen, maar ze blijven allemaal op een plek. Ze zijn wel aan het bewegen, maar
+	ze weten niet waar! Jij gaat ervoor zorgen dat ze een bepaalde richting moet lopen! Een enge pompoen kan niks doen als ze nergens kunnen bewegen!
 	Jr kan de volgende code gebruiken:
 	
-		** Code om pompoenen te laten bewegen - CodeBlok: Een lopende pampoen  **
+		** Code om pompoenen te laten bewegen - CodeBlok: Een lopende pompoen  **
 		
 			self.pumpkin.x = self.pumpkin.x + self.direction;
 
-		** Code voor de snelheid van de pampeon - CodeBlok: Pampoen attributen **
+		** Code voor de snelheid van de pampeon - CodeBlok: Pompoen attributen **
 		
 			self.speed = -5;
 			
 	Zet de code op de goede plek en bepaal zelf de snelheid!
 	
-	Je hebt een pampoen gemaakt die beweegt maar hij loopt buiten de scherm! Nu wordt het een uitdaging Ninja! Hoe kan je ervoor zorgen
-	dat de pampoen niet buiten de scherm loopt? Probeer het maar en werk samen met je mede-Ninjas! Hier zijn een paar tips:
+	Je hebt een pompoen gemaakt die beweegt maar hij loopt buiten de scherm! Nu wordt het een uitdaging Ninja! Hoe kan je ervoor zorgen
+	dat de pompoen niet buiten de scherm loopt? Probeer het maar en werk samen met je mede-Ninjas! Hier zijn een paar tips:
 	
 		-- Maak gebruik van de if statement!
 		
@@ -205,36 +205,36 @@ Success Ninja en bouw een awesome game!
 				-- Verander richting!
 			end
 		
-		-- Verander de richting van de pampoen
+		-- Verander de richting van de pompoen
 		self.changeDirection();
 		
-		-- Huidige positie van de pampoen
+		-- Huidige positie van de pompoen
 		self.pumpkin.x
 		
 	Kom je niet eruit? Vraag het maar aan de Sensei!
 	
 	
 	==========================================
-	=== STAP 4: De enge pampoenen stoppen! ===
+	=== STAP 4: De enge pompoenen stoppen! ===
 	==========================================
 		
-	CodeBlokken: "Pampoenen stoppen!"-(main.lua), "Variabelen"-(main.lua)
+	CodeBlokken: "Pompoenen stoppen!"-(main.lua), "Variabelen"-(main.lua)
 
-	LETOP: Haal de twee streepjes achter "clearEnemyArray()" weg om de code te laten draaien! Die kun je vinden bij de gameloop functie.
+	LETOP: Haal de twee streepjes voor "clearEnemyArray()" weg om de code te laten draaien! Die kun je vinden bij de gameloop functie.
 		
-	Goed gedaan Ninja! Je hebt een wereld gemaakt vol met pampoenen, maar nu lopen ze rond en de mensen van die wereld zijn bang! Het is tijd om de 
-	pampoenen te stoppen! Je kan al op de pampoen klikken of aanraken(op de mobiel) maar er gebeurd nog niks, dus het is nu aan jou om de laatste stuk 
+	Goed gedaan Ninja! Je hebt een wereld gemaakt vol met pompoenen, maar nu lopen ze rond en de mensen van die wereld zijn bang! Het is tijd om de 
+	pompoenen te stoppen! Je kan al op de pompoen klikken of aanraken(op de mobiel) maar er gebeurd nog niks, dus het is nu aan jou om de laatste stuk 
 	code te schrijven! Gebruik de volgennde code:
 		
-		** Stop de pampoen! - CodeBlok: Pampoenen stoppen! **
+		** Stop de pompoen! - CodeBlok: Pompoenen stoppen! **
 		enemy.setDestroyState();
 		
-	Zet de code op de goed plek en dan ben je klaar! Nu kan je pampoenen stoppen en de wereld redden!
+	Zet de code op de goed plek en dan ben je klaar! Nu kan je pompoenen stoppen en de wereld redden!
 	
 	== EXTRA == 
 	
-		Voor je laatste uitdaging als Beginner Mobile Ninja, kun je een score toevoegen om bij te houden hoeveel enge pampoenen je heeft gestopt!
-		Werk samen met je mede-ninjas en maak een score die het aantal gestopte pampoenen bijhoudt! Hier zijn de tips:
+		Voor je laatste uitdaging als Beginner Mobile Ninja, kun je een score toevoegen om bij te houden hoeveel enge pompoenen je heeft gestopt!
+		Werk samen met je mede-ninjas en maak een score die het aantal gestopte pompoenen bijhoudt! Hier zijn de tips:
 		
 		-- variabel om de score bij te kunnen houden
 		local score;
@@ -279,7 +279,7 @@ Success Ninja en bouw een awesome game!
 		-- Text veranderen van een text element
 		scoreText.text = "New text";
 		
-		Er zijn twee plekken waat je do code moet zetten, bij "Pampoenen stoppen!" en "Variabelen".
+		Er zijn twee plekken waat je do code moet zetten, bij "Pompoenen stoppen!" en "Variabelen".
 		Zet alles op de goede plek!
 		
 	== EINDE EXTRA == 
