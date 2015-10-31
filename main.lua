@@ -42,7 +42,7 @@ local function gameloop( event )
 	if gameTime >= spawnCount then
 
 		-----------------------------------------
-		-- ====== Maak een enge Pampoen ====== --
+		-- ====== Maak een enge Pompoen ====== --
 		-----------------------------------------
 		
 		-- Code Here
@@ -93,7 +93,7 @@ function clearEnemyArray()
 			elseif enemy.getDestructionState() == "pumpkinDie" then
 
 				--------------------------------------
-				-- ====== Pampoenen stoppen! ====== --
+				-- ====== Pompoenen stoppen! ====== --
 				--------------------------------------
 
 				-- Code Here
