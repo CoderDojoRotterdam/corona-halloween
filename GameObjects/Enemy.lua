@@ -8,7 +8,7 @@ Enemy = {};
 Enemy.new = function(x,y)
 	
 	--------------------------------------
-	-- ====== Pampoen attributen ====== --
+	-- ====== Pompoen attributen ====== --
 	--------------------------------------
 
 	local self = {};
@@ -111,7 +111,7 @@ Enemy.new = function(x,y)
 		if self.destruction ~= true then
 
 			---------------------------------------
-			-- ====== Een lopende pampoen ====== --
+			-- ====== Een lopende pompoen ====== --
 			---------------------------------------
 			
 			-- Code Here
